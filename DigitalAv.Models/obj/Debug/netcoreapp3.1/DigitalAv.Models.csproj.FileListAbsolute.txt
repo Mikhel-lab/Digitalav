@@ -1,0 +1,9 @@
+C:\Users\SDSD DEV7\source\repos\DigitalAv.Models\obj\Debug\netcoreapp3.1\DigitalAv.Models.csprojAssemblyReference.cache
+C:\Users\SDSD DEV7\source\repos\DigitalAv.Models\obj\Debug\netcoreapp3.1\DigitalAv.Models.AssemblyInfoInputs.cache
+C:\Users\SDSD DEV7\source\repos\DigitalAv.Models\obj\Debug\netcoreapp3.1\DigitalAv.Models.AssemblyInfo.cs
+C:\Users\SDSD DEV7\source\repos\DigitalAv.Models\obj\Debug\netcoreapp3.1\DigitalAv.Models.csproj.CoreCompileInputs.cache
+C:\Users\SDSD DEV7\source\repos\DigitalAv.Models\bin\Debug\netcoreapp3.1\DigitalAv.Models.deps.json
+C:\Users\SDSD DEV7\source\repos\DigitalAv.Models\bin\Debug\netcoreapp3.1\DigitalAv.Models.dll
+C:\Users\SDSD DEV7\source\repos\DigitalAv.Models\bin\Debug\netcoreapp3.1\DigitalAv.Models.pdb
+C:\Users\SDSD DEV7\source\repos\DigitalAv.Models\obj\Debug\netcoreapp3.1\DigitalAv.Models.dll
+C:\Users\SDSD DEV7\source\repos\DigitalAv.Models\obj\Debug\netcoreapp3.1\DigitalAv.Models.pdb
