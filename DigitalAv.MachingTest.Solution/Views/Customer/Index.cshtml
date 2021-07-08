@@ -1,0 +1,66 @@
+﻿
+@model List<DigitalAv.Domain.DTO.CustomerIndexViewModel>
+
+@{ ViewBag.Title = "Customer";}
+
+<link href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css" rel="stylesheet" />
+
+
+<div class="row">
+	<div class="col-md-12 grid-margin">
+		<div class="card">
+			<div class="card-body">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
+						<li class="breadcrumb-item active" aria-current="page">User List</li>
+					</ol>
+				</nav><br /><br />
+				<div class="row">
+					<div class="col-md-12 table-responsive-md">
+						<a class="btn btn-xs btn-outline-success float-md-right" asp-action="Create"> New User</a>
+						<div class="datatable">
+							<table class="table table-bordered table-hover" id="dataTable" width="100%" cellspacing="0">
+								<thead>
+									<tr>
+										<th>Name</th>
+										<th>SaleDate</th>
+										<th>Quantity</th>
+										<th>Country</th>
+										<th>Region</th>
+										<th>City</th>
+										<th>Product</th>
+										<th class="text-warning">Actions</th>
+									</tr>
+								</thead>
+								<tbody>
+									@foreach (var item in Model)
+									{
+										<tr>
+											<td>@item.Name</td>
+											<td>@item.SaleDate</td>
+											<td>@item.Quantity</td>
+											<td>@item.CountryCode</td>
+											<td>@item.RegionCode</td>
+											<td>@item.CityCode</td>
+											<td>@item.ProductId</td>
+											<td>
+												<a class="text-success" asp-action="Detail">
+													<i class="fas fa-bars"></i> Details
+												</a>
+
+											</td>
+										</tr>
+									}
+								</tbody>
+							</table><br />
+						</div>
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>

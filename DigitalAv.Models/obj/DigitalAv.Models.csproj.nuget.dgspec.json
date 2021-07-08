@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAv.Models\\DigitalAv.Models.csproj": {}
+    "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAvss\\DigitalAv.Models\\DigitalAv.Models.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAv.Models\\DigitalAv.Models.csproj": {
+    "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAvss\\DigitalAv.Models\\DigitalAv.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAv.Models\\DigitalAv.Models.csproj",
+        "projectUniqueName": "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAvss\\DigitalAv.Models\\DigitalAv.Models.csproj",
         "projectName": "DigitalAv.Models",
-        "projectPath": "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAv.Models\\DigitalAv.Models.csproj",
+        "projectPath": "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAvss\\DigitalAv.Models\\DigitalAv.Models.csproj",
         "packagesPath": "C:\\Users\\SDSD DEV7\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAv.Models\\obj\\",
+        "outputPath": "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAvss\\DigitalAv.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -46,6 +46,16 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.ViewFeatures": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

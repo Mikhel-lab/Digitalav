@@ -6,11 +6,11 @@ using System.Text;
 
 namespace DigitalAv.Models.Model
 {
-	public class Region : BaseModel
+	public class Region 
 	{
+		public int Id { get; set; }
 		public string RegionCode { get; set; }
-		public string CountryCode { get; set; }
-		[ForeignKey(nameof(CountryCode))]
+		public int CountryCode { get; set; }
 		public Country Country { get; set; }
 		public string RegionName { get; set; }
 

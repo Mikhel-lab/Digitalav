@@ -7,3 +7,15 @@ C:\Users\SDSD DEV7\source\repos\DigitalAv.DataAccessLayer\obj\Debug\netcoreapp3.
 C:\Users\SDSD DEV7\source\repos\DigitalAv.DataAccessLayer\obj\Debug\netcoreapp3.1\DigitalAv.Domain.csproj.CoreCompileInputs.cache
 C:\Users\SDSD DEV7\source\repos\DigitalAv.DataAccessLayer\obj\Debug\netcoreapp3.1\DigitalAv.Domain.dll
 C:\Users\SDSD DEV7\source\repos\DigitalAv.DataAccessLayer\obj\Debug\netcoreapp3.1\DigitalAv.Domain.pdb
+C:\Users\SDSD DEV7\source\repos\DigitalAvss\DigitalAv.DataAccessLayer\obj\Debug\netcoreapp3.1\DigitalAv.Domain.csprojAssemblyReference.cache
+C:\Users\SDSD DEV7\source\repos\DigitalAvss\DigitalAv.DataAccessLayer\obj\Debug\netcoreapp3.1\DigitalAv.Domain.AssemblyInfoInputs.cache
+C:\Users\SDSD DEV7\source\repos\DigitalAvss\DigitalAv.DataAccessLayer\obj\Debug\netcoreapp3.1\DigitalAv.Domain.AssemblyInfo.cs
+C:\Users\SDSD DEV7\source\repos\DigitalAvss\DigitalAv.DataAccessLayer\obj\Debug\netcoreapp3.1\DigitalAv.Domain.csproj.CoreCompileInputs.cache
+C:\Users\SDSD DEV7\source\repos\DigitalAvss\DigitalAv.DataAccessLayer\obj\Debug\netcoreapp3.1\DigitalAv.Domain.dll
+C:\Users\SDSD DEV7\source\repos\DigitalAvss\DigitalAv.DataAccessLayer\obj\Debug\netcoreapp3.1\DigitalAv.Domain.pdb
+C:\Users\SDSD DEV7\source\repos\DigitalAvss\DigitalAv.DataAccessLayer\bin\Debug\netcoreapp3.1\DigitalAv.Domain.deps.json
+C:\Users\SDSD DEV7\source\repos\DigitalAvss\DigitalAv.DataAccessLayer\bin\Debug\netcoreapp3.1\DigitalAv.Domain.dll
+C:\Users\SDSD DEV7\source\repos\DigitalAvss\DigitalAv.DataAccessLayer\bin\Debug\netcoreapp3.1\DigitalAv.Domain.pdb
+C:\Users\SDSD DEV7\source\repos\DigitalAvss\DigitalAv.DataAccessLayer\bin\Debug\netcoreapp3.1\DigitalAv.Models.dll
+C:\Users\SDSD DEV7\source\repos\DigitalAvss\DigitalAv.DataAccessLayer\bin\Debug\netcoreapp3.1\DigitalAv.Models.pdb
+C:\Users\SDSD DEV7\source\repos\DigitalAvss\DigitalAv.DataAccessLayer\obj\Debug\netcoreapp3.1\DigitalAv.Domain.csproj.CopyComplete

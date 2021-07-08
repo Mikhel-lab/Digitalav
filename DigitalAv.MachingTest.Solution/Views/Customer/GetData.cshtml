@@ -1,0 +1,127 @@
+﻿@model DigitalAv.Domain.DTO.CustomerCreateViewModel
+
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<div class="col-md-12 grid-margin stretch-card">
+	<div class="card">
+		<div class="card-body">
+			<nav aria-label="breadcrumb">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
+					<li class="breadcrumb-item"><a asp-action="Index">Customer List</a></li>
+					<li class="breadcrumb-item active" aria-current="page">New Customer</li>
+				</ol>
+			</nav><br /><br />
+						<form method="post" enctype="multipart/form-data" asp-action="Create">
+							<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+							<div class="form-row">
+								<div class="form-group col-md-3">
+									<label>Name</label>
+									<select id="ddlname" class="form-control" asp-items="Model.Customers" asp-for="CustomerID"></select>
+									<span asp-validation-for="CustomerID" class="text-danger"></span>
+								</div>
+							</div>
+							<div class="form-row">
+
+								<div class="form-group col-md-3">
+									<label>Country</label>
+									<select id="ddlcountry" class="form-control" asp-items="Model.Countries" asp-for="CountryCode"></select>
+									<span asp-validation-for="CountryCode" class="text-danger"></span>
+								</div>
+
+								<div class="form-group col-md-3">
+									<label>Region</label>
+									<select id="ddlregion" class="form-control" asp-for="RegionCode"></select>
+									<span asp-validation-for="RegionCode" class="text-danger"></span>
+								</div>
+
+								<div class="form-group col-md-3">
+									<label>City</label>
+									<select id="ddlcity" class="form-control" asp-for="CityCode"></select>
+									<span asp-validation-for="CityCode" class="text-danger"></span>
+								</div>
+
+								<div class="form-group col-md-3">
+									<label>Product</label>
+									<select id="ddlproduct" class="form-control" asp-items="Model.Products" asp-for="ProductId"></select>
+									<span asp-validation-for="ProductId" class="text-danger"></span>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<button id="btnSubmit" class="btn btn-rounded btn-primary float-left"><i class="fas fa-plus-square" style="margin-right:0.7em"></i>Save</button>
+								<a asp-action="index" class="btn btn-rounded btn-success float-right"><i class="fas fa-caret-square-left" style="margin-right:0.7em"></i>Back</a>
+								<br />
+								<br />
+								<br />
+
+							</div>
+						</form>
+		</div>
+	</div>
+</div>
+
+
+
+<script>
+	
+
+
+	$(function () {
+		$("#ddlcountry").change(function () {
+			$.getJSON("/Customer/GetRegionList", { cid: $("#ddlcountry").val() }, function (d) {
+				var row = "";
+				$("#ddlregion").empty();
+				$.each(d, function (i, v) {
+					row += "<option value=" + v.value + ">" + v.text + "</option > ";
+				});
+				$("#ddlregion").html(row);
+
+			})
+
+
+		})
+
+		$("#ddlregion").change(function () {
+			$.getJSON("/Customer/GetCityList", { sid: $("#ddlregion").val() }, function (d) {
+				var row = "";
+				$("#ddlcity").empty();
+				$.each(d, function (i, v) {
+					row += "<option value=" + v.value + ">" + v.text + "</option > ";
+				});
+				$("#ddlcity").html(row);
+
+			})
+
+
+		})
+	})
+</script>
+<script>
+	$(function () {
+		$("#ddlproduct").change(function () {
+			$.getJSON("/Customer/GetProductList", { cid: $("#ddlproduct").val() }, function (d) {
+				var row = "";
+				$("#ddlregion").empty();
+				$.each(d, function (i, v) {
+					row += "<option value=" + v.value + ">" + v.text + "</option > ";
+				});
+				//$("#ddlregion").html(row);
+
+			})
+
+
+		})
+
+
+	})
+
+
+
+
+
+</script>
+
+
+
+
+

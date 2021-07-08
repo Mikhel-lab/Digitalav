@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAv.MachingTest.Solution\\DigitalAv.MachingTest.Solution.csproj": {}
+    "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAvss\\DigitalAv.MachingTest.Solution\\DigitalAv.MachingTest.Solution.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAv.DataAccessLayer\\DigitalAv.Domain.csproj": {
+    "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAvss\\DigitalAv.DataAccessLayer\\DigitalAv.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAv.DataAccessLayer\\DigitalAv.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAvss\\DigitalAv.DataAccessLayer\\DigitalAv.Domain.csproj",
         "projectName": "DigitalAv.Domain",
-        "projectPath": "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAv.DataAccessLayer\\DigitalAv.Domain.csproj",
+        "projectPath": "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAvss\\DigitalAv.DataAccessLayer\\DigitalAv.Domain.csproj",
         "packagesPath": "C:\\Users\\SDSD DEV7\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAv.DataAccessLayer\\obj\\",
+        "outputPath": "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAvss\\DigitalAv.DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -35,8 +35,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAv.Models\\DigitalAv.Models.csproj": {
-                "projectPath": "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAv.Models\\DigitalAv.Models.csproj"
+              "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAvss\\DigitalAv.Models\\DigitalAv.Models.csproj": {
+                "projectPath": "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAvss\\DigitalAv.Models\\DigitalAv.Models.csproj"
               }
             }
           }
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAv.MachingTest.Solution\\DigitalAv.MachingTest.Solution.csproj": {
+    "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAvss\\DigitalAv.MachingTest.Solution\\DigitalAv.MachingTest.Solution.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAv.MachingTest.Solution\\DigitalAv.MachingTest.Solution.csproj",
+        "projectUniqueName": "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAvss\\DigitalAv.MachingTest.Solution\\DigitalAv.MachingTest.Solution.csproj",
         "projectName": "DigitalAv.MachingTest.Solution",
-        "projectPath": "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAv.MachingTest.Solution\\DigitalAv.MachingTest.Solution.csproj",
+        "projectPath": "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAvss\\DigitalAv.MachingTest.Solution\\DigitalAv.MachingTest.Solution.csproj",
         "packagesPath": "C:\\Users\\SDSD DEV7\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAv.MachingTest.Solution\\obj\\",
+        "outputPath": "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAvss\\DigitalAv.MachingTest.Solution\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -100,11 +100,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAv.DataAccessLayer\\DigitalAv.Domain.csproj": {
-                "projectPath": "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAv.DataAccessLayer\\DigitalAv.Domain.csproj"
+              "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAvss\\DigitalAv.DataAccessLayer\\DigitalAv.Domain.csproj": {
+                "projectPath": "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAvss\\DigitalAv.DataAccessLayer\\DigitalAv.Domain.csproj"
               },
-              "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAv.Service\\DigitalAv.Repositories.csproj": {
-                "projectPath": "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAv.Service\\DigitalAv.Repositories.csproj"
+              "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAvss\\DigitalAv.Service\\DigitalAv.Repositories.csproj": {
+                "projectPath": "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAvss\\DigitalAv.Service\\DigitalAv.Repositories.csproj"
               }
             }
           }
@@ -119,21 +119,23 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[3.1.16, )"
+              "version": "[5.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[5.0.7, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[3.1.16, )"
+              "version": "[5.0.7, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.1.16, )"
+              "version": "[5.0.7, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
@@ -162,14 +164,14 @@
         }
       }
     },
-    "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAv.Models\\DigitalAv.Models.csproj": {
+    "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAvss\\DigitalAv.Models\\DigitalAv.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAv.Models\\DigitalAv.Models.csproj",
+        "projectUniqueName": "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAvss\\DigitalAv.Models\\DigitalAv.Models.csproj",
         "projectName": "DigitalAv.Models",
-        "projectPath": "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAv.Models\\DigitalAv.Models.csproj",
+        "projectPath": "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAvss\\DigitalAv.Models\\DigitalAv.Models.csproj",
         "packagesPath": "C:\\Users\\SDSD DEV7\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAv.Models\\obj\\",
+        "outputPath": "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAvss\\DigitalAv.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -204,6 +206,16 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.ViewFeatures": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -223,14 +235,14 @@
         }
       }
     },
-    "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAv.Service\\DigitalAv.Repositories.csproj": {
+    "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAvss\\DigitalAv.Service\\DigitalAv.Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAv.Service\\DigitalAv.Repositories.csproj",
+        "projectUniqueName": "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAvss\\DigitalAv.Service\\DigitalAv.Repositories.csproj",
         "projectName": "DigitalAv.Repositories",
-        "projectPath": "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAv.Service\\DigitalAv.Repositories.csproj",
+        "projectPath": "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAvss\\DigitalAv.Service\\DigitalAv.Repositories.csproj",
         "packagesPath": "C:\\Users\\SDSD DEV7\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAv.Service\\obj\\",
+        "outputPath": "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAvss\\DigitalAv.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -254,8 +266,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAv.Models\\DigitalAv.Models.csproj": {
-                "projectPath": "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAv.Models\\DigitalAv.Models.csproj"
+              "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAvss\\DigitalAv.Models\\DigitalAv.Models.csproj": {
+                "projectPath": "C:\\Users\\SDSD DEV7\\source\\repos\\DigitalAvss\\DigitalAv.Models\\DigitalAv.Models.csproj"
               }
             }
           }
@@ -270,23 +282,37 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
-            "Microsoft.AspNet.Mvc": {
-              "target": "Package",
-              "version": "[5.2.7, )"
-            },
-            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[3.1.16, )"
-            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[3.1.16, )"
+              "version": "[5.0.7, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
               "version": "[3.1.16, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[5.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.16, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.16, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
             }
           },
           "imports": [

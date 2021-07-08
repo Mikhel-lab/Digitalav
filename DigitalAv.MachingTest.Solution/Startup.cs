@@ -33,9 +33,8 @@ namespace DigitalAv.MachingTest.Solution
 				options.CheckConsentNeeded = context => true;
 				options.MinimumSameSitePolicy = SameSiteMode.None;
 			});
-			services.AddDbContext<CustomerDatabaseContext>(options =>
-				options.UseSqlServer(
-					Configuration.GetConnectionString("DefaultConnection")));
+			
+
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
