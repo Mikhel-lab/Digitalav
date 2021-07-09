@@ -33,9 +33,9 @@ namespace DigitalAv.MachingTest.Solution.Controllers
 					Quantity = Convert.ToInt32(dr["Quantity"].ToString()),
 					RegionCode = dr["RegionCode"].ToString()
 				}) ;
-				//return View(customer);
-				int pageSize = 4;
-				return View(CustomerListPagination<CustomerIndexViewModel>.Create(customer, pageNumber ?? 1, pageSize));
+				return View(customer);
+				//int pageSize = 4;
+				//return View(CustomerListPagination<CustomerIndexViewModel>.Create(customer, pageNumber ?? 1, pageSize));
 			}
 
 			return View();
@@ -158,11 +158,11 @@ namespace DigitalAv.MachingTest.Solution.Controllers
 		[HttpGet]
 		public IActionResult Detail(int id)
 		{
-			List<CustomerIndexViewModel> customer = new List<CustomerIndexViewModel>();
+			CustomerDetailViewModel customer = new CustomerDetailViewModel();
 			var ds = db.GetAllSAles();
 			foreach (DataRow dr in ds.Tables[0].Rows)
 			{
-				customer.Add(new CustomerIndexViewModel
+				customer= new CustomerDetailViewModel
 				{
 					Name = dr["SalesName"].ToString(),
 					SaleDate = DateTime.Parse(dr["SaleDate"].ToString()),
@@ -171,7 +171,7 @@ namespace DigitalAv.MachingTest.Solution.Controllers
 					ProductId = Convert.ToInt32(dr["ProductId"].ToString()),
 					Quantity = Convert.ToInt32(dr["Quantity"].ToString()),
 					RegionCode = dr["RegionCode"].ToString()
-				});
+				};
 				return View(customer);
 				
 			}

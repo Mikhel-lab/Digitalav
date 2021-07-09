@@ -11,5 +11,13 @@ namespace DigitalAv.Domain.DTO
 		public DateTime SaleDate { get; set; }
 		public int Quantity { get; set; }
 
+		public string CountryCode { get; set; }
+
+		public string RegionCode { get; set; }
+
+		public int CityCode { get; set; }
+
+		public int ProductId { get; set; }
+
 	}
 }
