@@ -5,6 +5,7 @@
 
 
 <link href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css" rel="stylesheet"/>
 <div class="row">
 	<div class="col-md-12 grid-margin">
 		<div class="card">
@@ -18,7 +19,6 @@
 				<div class="row">
 					<div class="col-md-12 table-responsive-md">
 						<a class="btn btn-xs btn-outline-success float-md-right" asp-action="Create"> New User</a>
-
 						<table class="table table-bordered table-hover" id="dataTable" width="100%" cellspacing="0">
 							<thead>
 								<tr>
@@ -39,7 +39,7 @@
 										<td>@item.Name</td>
 										<td>@item.SaleDate</td>
 										<td>@item.Quantity</td>
-										<td>@item.CityCode</td>
+										<td>@item.CountryCode</td>
 										<td>@item.RegionCode</td>
 										<td>@item.CityCode</td>
 										<td>@item.ProductId</td>
@@ -54,18 +54,18 @@
 							</tbody>
 						</table><br />
 						@*@{ var disablePrevious = !Model.IsPreviousPageAvailable ? "disabled" : "";
-							var disableNext = !Model.IsNextPageAvailable ? "disabled" : ""; }
+								var disableNext = !Model.IsNextPageAvailable ? "disabled" : ""; }
 
-						<a asp-action="Index"
-						   asp-route-pageNumber="@(Model.PageIndex - 1)"
-						   class="btn btn-primary @disablePrevious">
-							Previous
-						</a>
-						<a asp-action="Index"
-						   asp-route-pageNumber="@(Model.PageIndex + 1)"
-						   class="btn btn-primary @disableNext">
-							Next
-						</a>*@
+							<a asp-action="Index"
+							   asp-route-pageNumber="@(Model.PageIndex - 1)"
+							   class="btn btn-primary @disablePrevious">
+								Previous
+							</a>
+							<a asp-action="Index"
+							   asp-route-pageNumber="@(Model.PageIndex + 1)"
+							   class="btn btn-primary @disableNext">
+								Next
+							</a>*@
 
 					</div>
 				</div>
@@ -74,29 +74,37 @@
 	</div>
 </div>
 
-
+<script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script src="dists/js/scripts.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
 <script src="dists/assets/demo/datatables-demo.js"></script>
 <script>
-	function DataTable() {
-		debugger
-		$(document).ready(function () {
-			$('#dataTable').DataTable();
+	$(document).ready(function () {
+		$('#dataTable').DataTable();
+	});
+	//function DataTable() {
+	//	debugger
+	//	$(document).ready(function () {
+	//		$('#dataTable').DataTable();
 
-			columnDefs: [
-				{
-					targets: 0,
-					checkboxes: {
-						selectRow: true
-					}
-				}
-			];
+	//		columnDefs: [
+	//			{
+	//				targets: 0,
+	//				checkboxes: {
+	//					selectRow: true
+	//				}
+	//			}
+	//		];
 
-			select: {
-				style: 'multi'
-			};
-			order: [[1, 'asc']]
+	//		select: {
+	//			style: 'multi'
+	//		};
+	//		order: [[1, 'asc']]
 
-		});
-	}
+	//	});
+	//}
 </script>
