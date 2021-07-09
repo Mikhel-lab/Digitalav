@@ -33,9 +33,9 @@ namespace DigitalAv.MachingTest.Solution.Controllers
 					Quantity = Convert.ToInt32(dr["Quantity"].ToString()),
 					RegionCode = dr["RegionCode"].ToString()
 				}) ;
-				return View(customer);
-				//int pageSize = 4;
-				//return View(CustomerListPagination<CustomerIndexViewModel>.Create(customer, pageNumber ?? 1, pageSize));
+				//return View(customer);
+				int pageSize = 4;
+				return View(CustomerListPagination<CustomerIndexViewModel>.Create(customer, pageNumber ?? 1, pageSize));
 			}
 
 			return View();
@@ -109,23 +109,7 @@ namespace DigitalAv.MachingTest.Solution.Controllers
 
 		}
 
-		//[HttpGet]
-		//public IActionResult GetCustomerName(string nid)
-		//{
-			
-		//	DataSet ds = db.GetCustomerName(nid);
-		//	List<SelectListItem> list = new List<SelectListItem>();
-		//	var user = new CustomerCreateViewModel();
-		//	user.Customers.Add(new SelectListItem("Select Name", ""));
-		//	foreach (DataRow dr in ds.Tables[0].Rows)
-		//	{
-		//		user.Customers.Add(new SelectListItem { Text = dr["Name"].ToString(), Value = dr["CustomerID"].ToString() });
-		//	}
-		//	return View(user);
-
-		//}
-
-
+		
 
 		[HttpGet]
 		public IActionResult GetProductList()
@@ -134,8 +118,6 @@ namespace DigitalAv.MachingTest.Solution.Controllers
 			DataSet ds = db.GetProduct();
 			var dt = ds.Tables[0];
 			List<SelectListItem> list = new List<SelectListItem>();
-			//var product = new CustomerCreateViewModel();
-			//product.Products.Add(new SelectListItem("Select Product", ""));
 			foreach (DataRow dr in ds.Tables[0].Rows)
 			{
 				list.Add(new SelectListItem { Text = dr["ProductName"].ToString(), Value = dr["ProductID"].ToString() });
@@ -173,27 +155,30 @@ namespace DigitalAv.MachingTest.Solution.Controllers
 		}
 
 
-		//[HttpGet]
-		//public IActionResult Detail(int id)
-		//{
-		//	var customer = _customerService.GetById(id);
-		//	if (customer == null)
-		//	{
-		//		return NotFound();
-		//	}
+		[HttpGet]
+		public IActionResult Detail(int id)
+		{
+			List<CustomerIndexViewModel> customer = new List<CustomerIndexViewModel>();
+			var ds = db.GetAllSAles();
+			foreach (DataRow dr in ds.Tables[0].Rows)
+			{
+				customer.Add(new CustomerIndexViewModel
+				{
+					Name = dr["SalesName"].ToString(),
+					SaleDate = DateTime.Parse(dr["SaleDate"].ToString()),
+					CityCode = Convert.ToInt32(dr["CityCode"].ToString()),
+					CountryCode = dr["CountryCode"].ToString(),
+					ProductId = Convert.ToInt32(dr["ProductId"].ToString()),
+					Quantity = Convert.ToInt32(dr["Quantity"].ToString()),
+					RegionCode = dr["RegionCode"].ToString()
+				});
+				return View(customer);
+				
+			}
+			return View();
+		}
 
-		//	CustomerDetailViewModel model = new CustomerDetailViewModel()
-		//	{
-		//		CustomerID = customer.CustomerID,
-		//		Name = customer.Name,
-		//		SaleDate = customer.SaleDate,
-		//		Quantity = customer.Quantity
-		//	};
-
-		//	return View(model);
-		//}
-
-		public IActionResult Filter() => View();
+		//public IActionResult Filter() => View();
 
 		//[HttpPost]
 		//public IActionResult Filter(string keyword)
