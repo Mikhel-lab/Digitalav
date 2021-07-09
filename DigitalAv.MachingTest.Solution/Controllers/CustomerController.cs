@@ -33,9 +33,9 @@ namespace DigitalAv.MachingTest.Solution.Controllers
 					Quantity = Convert.ToInt32(dr["Quantity"].ToString()),
 					RegionCode = dr["RegionCode"].ToString()
 				}) ;
-				return View(customer);
-				//int pageSize = 4;
-				//return View(CustomerListPagination<CustomerIndexViewModel>.Create(customer, pageNumber ?? 1, pageSize));
+				//return View(customer);
+				int pageSize = 4;
+				return View(CustomerListPagination<CustomerIndexViewModel>.Create(customer, pageNumber ?? 1, pageSize));
 			}
 
 			return View();
